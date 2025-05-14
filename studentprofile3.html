@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ashok Chakma - Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f9ff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e3f2fd;
+            padding-bottom: 20px;
+        }
+
+        .profile-photo {
+            border-radius: 12px;
+            width: 150px;
+            height: 180px;
+            object-fit: cover;
+            margin-right: 25px;
+            border: 3px solid #2196f3;
+        }
+
+        .profile-info h1 {
+            margin: 0;
+            color: #0d47a1;
+            font-size: 28px;
+        }
+
+        .profile-title {
+            font-weight: bold;
+            color: #1976d2;
+            margin: 8px 0;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            font-size: 22px;
+            color: #0d47a1;
+            border-bottom: 2px solid #bbdefb;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .hobbies-list {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .hobby-item {
+            background-color: #e3f2fd;
+            padding: 8px 15px;
+            border-radius: 8px;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .education-item, .experience-item {
+            margin-bottom: 15px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            color: #0d47a1;
+        }
+
+        .item-subtitle {
+            font-style: italic;
+            color: #555;
+        }
+
+        .item-duration {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .contact-item {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        .contact-icon {
+            font-size: 24px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .profile-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .profile-photo {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <img src="images/student3.jpeg" alt="Ashok Chakma" class="profile-photo">
+            <div class="profile-info">
+                <h1>Ashok Chakma</h1>
+                <p class="profile-title">Master's Student at KCGI</p>
+                <p>♟️ Chess Enthusiast | 🧠 Strategic Thinker</p>
+            </div>
+        </div>
+
+        <!-- Biography -->
+        <div class="section">
+            <h2 class="section-title">Biography</h2>
+            <p>
+                I am Ashok Chakma, a dedicated graduate student currently pursuing my Master's degree at Kyoto College of Graduate Studies for Informatics (KCGI). With a strong passion for strategic thinking and problem-solving, I find chess to be both a hobby and a mental exercise that enhances my analytical abilities. My academic journey reflects my commitment to continuous learning and professional growth. I aim to apply my knowledge and skills to make meaningful contributions in my field of expertise.
+            </p>
+        </div>
+
+        <!-- Hobbies -->
+        <div class="section">
+            <h2 class="section-title">Hobbies</h2>
+            <ul class="hobbies-list">
+                <li class="hobby-item">♟️ Playing Chess</li>
+                <li class="hobby-item">📚 Reading</li>
+                <li class="hobby-item">🌍 Traveling</li>
+                <li class="hobby-item">💻 Technology Exploration</li>
+                <li class="hobby-item">🎵 Music</li>
+            </ul>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <div class="item-title">Master's Degree (Ongoing)</div>
+                <div class="item-subtitle">Kyoto College of Graduate Studies for Informatics (KCGI)</div>
+                <div class="item-duration">2023 – Present</div>
+            </div>
+            <div class="education-item">
+                <div class="item-title">Bachelor's Degree</div>
+                <div class="item-subtitle">University of North Bengal</div>
+                <div class="item-duration">2014 – 2017</div>
+            </div>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="section">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-item">
+                <div class="item-title">HR Admin</div>
+                <div class="item-subtitle">Blue Pineapple Technology</div>
+                <div class="item-duration">2022 – 2024</div>
+            </div>
+            <div class="experience-item">
+                <div class="item-title">HR Executive</div>
+                <div class="item-subtitle">SCADA Engineering Ltd</div>
+                <div class="item-duration">2019 – 2021</div>
+            </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="section">
+            <h2 class="section-title">Contact Information</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <span class="contact-icon">🏠</span>
+                    <div>
+                        <strong>Address:</strong><br>
+                        Room No: 102, Tower Gojo,<br>
+                        Kyoto-shi, Shimogyo-ku,<br>
+                        Kyoto Prefecture, Japan
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <div>
+                        <strong>Email:</strong><br>
+                        ashok.chakma55@hotmail.com
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <div>
+                        <strong>Phone:</strong><br>
+                        +81 7082523874
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🔗</span>
+                    <div>
+                        <strong>LinkedIn:</strong><br>
+                        linkedin.com/in/ashokchakma55
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
